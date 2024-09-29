@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JS</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body onload="encenderApagar()">
+    <h1>Calculadora con JS</h1>
+
+    <div id="calculadora">
+        <input type="text" calss='btn' id="display" readonly>
+        <input type="button" id="onOff" value="On" onclick="encenderApagar()">
+        <input type="button" class="btn" id="uno" value="1" onclick="ingresarDato('1')">
+        <input type="button" class="btn" id="dos" value="2" onclick="ingresarDato('2')">
+        <input type="button" class="btn" id="tres" value="3" onclick="ingresarDato('3')">
+        <input type="button" class="btn" id="cuatro" value="4" onclick="ingresarDato('4')">
+        <input type="button" class="btn" id="cinco" value="5" onclick="ingresarDato('5')">
+        <input type="button" class="btn" id="seis" value="6" onclick="ingresarDato('6')">
+        <input type="button" class="btn" id="siete" value="7" onclick="ingresarDato('7')">
+        <input type="button" class="btn" id="ocho" value="8" onclick="ingresarDato('8')">
+        <input type="button" class="btn" id="nueve" value="9" onclick="ingresarDato('9')">
+        <input type="button" class="btn" id="cero" value="0" onclick="ingresarDato('0')">
+        <input type="button" class="btn" id="suma" value="+" onclick="ingresarOperador('+')">
+        <input type="button" class="btn" id="resta" value="-" onclick="ingresarOperador('-')">
+        <input type="button" class="btn" id="multiplicacion" value="*" onclick="ingresarOperador('*')">
+        <input type="button" class="btn" id="division" value="/" onclick="ingresarOperador('/')">
+        <input type="button" class="btn" id="igual" value="=" onclick="calcular()">
+        <input type="button" class="btn" id="punto" value="." onclick="ingresarDato('.')">
+        <input type="button" class="btn" id="borrar" value="C" onclick="borrar()">
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
